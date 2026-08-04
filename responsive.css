@@ -1,0 +1,254 @@
+/* Mobile First Responsive Design */
+
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .top-bar {
+    padding: 1rem;
+  }
+  
+  .content-area {
+    padding: 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-area {
+    padding: 1rem;
+    padding-bottom: 5rem;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .quick-actions {
+    width: 100%;
+  }
+  
+  .quick-action-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .filter-bar {
+    flex-direction: column;
+  }
+  
+  .filter-bar .form-select,
+  .filter-bar .form-input {
+    width: 100%;
+  }
+  
+  .data-table-container {
+    margin: 0 -1rem;
+    width: calc(100% + 2rem);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .transaction-item {
+    padding: 0.875rem;
+  }
+  
+  .transaction-actions {
+    opacity: 1;
+  }
+  
+  .mobile-nav {
+    display: flex;
+  }
+  
+  .weekly-grid {
+    gap: 0.25rem;
+  }
+  
+  .weekly-day {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .weekly-day-bar {
+    height: 40px;
+  }
+  
+  .modal {
+    max-height: 95vh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+  }
+  
+  .modal-overlay.active .modal {
+    transform: translateY(0);
+  }
+  
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 5rem;
+  }
+  
+  .toast {
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .install-prompt {
+    left: 1rem;
+    right: 1rem;
+    transform: none;
+    bottom: 80px;
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .comparison-bar {
+    height: 28px;
+  }
+  
+  .top-bar-title {
+    font-size: 1.125rem;
+  }
+  
+  .chart-container {
+    height: 240px;
+  }
+  
+  .chart-container-sm {
+    height: 180px;
+  }
+  
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+  
+  .sidebar-overlay.active {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-value {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+  }
+  
+  .btn-lg {
+    padding: 0.875rem 1.5rem;
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .weekly-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .weekly-day-name {
+    font-size: 0.65rem;
+  }
+  
+  .weekly-day-amount {
+    font-size: 0.65rem;
+  }
+}
+
+/* Tablet landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 220px;
+  }
+  
+  .main-content {
+    margin-left: 220px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .content-area {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .sidebar,
+  .mobile-nav,
+  .top-bar,
+  .modal-overlay,
+  .toast-container,
+  .install-prompt {
+    display: none !important;
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .glass-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
