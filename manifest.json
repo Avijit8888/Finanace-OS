@@ -1,23 +1,4 @@
-{
-  "name": "FinanceOS",
-  "short_name": "FinanceOS",
-  "description": "Personal Finance Management Dashboard",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
-  "orientation": "portrait-primary",
-  "scope": "./",
-  "icons": [
-    {
-      "src": "assets/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
-  ]
-}
-
+{"name":"FinanceOS","short_name":"FinanceOS","description":"Personal Finance Management Dashboard","start_url":"./","display":"standalone","background_color":"#0f172a","theme_color":"#0f172a","orientation":"portrait-primary","scope":"./","icons":[{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]}
 const utils = {
   formatCurrency(amount) {
     return new Intl.NumberFormat('en-US', {
