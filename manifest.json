@@ -1,3 +1,12 @@
+{
+  "name": "FinanceOS",
+  "short_name": "FinanceOS",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  ...
+}
+
 const utils = {
   formatCurrency(amount) {
     return new Intl.NumberFormat('en-US', {
