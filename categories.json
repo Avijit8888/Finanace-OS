@@ -1,0 +1,23 @@
+{
+  "income": [
+    { "id": "salary", "name": "Salary", "icon": "fa-money-bill-wave", "color": "#10b981" },
+    { "id": "freelance", "name": "Freelance", "icon": "fa-laptop-code", "color": "#3b82f6" },
+    { "id": "investment", "name": "Investment", "icon": "fa-chart-line", "color": "#8b5cf6" },
+    { "id": "gift", "name": "Gift", "icon": "fa-gift", "color": "#ec4899" },
+    { "id": "refund", "name": "Refund", "icon": "fa-rotate-left", "color": "#06b6d4" },
+    { "id": "other_income", "name": "Other Income", "icon": "fa-circle-plus", "color": "#84cc16" }
+  ],
+  "expense": [
+    { "id": "food", "name": "Food & Dining", "icon": "fa-utensils", "color": "#f59e0b" },
+    { "id": "transport", "name": "Transport", "icon": "fa-car", "color": "#ef4444" },
+    { "id": "shopping", "name": "Shopping", "icon": "fa-bag-shopping", "color": "#ec4899" },
+    { "id": "entertainment", "name": "Entertainment", "icon": "fa-film", "color": "#8b5cf6" },
+    { "id": "bills", "name": "Bills & Utilities", "icon": "fa-file-invoice-dollar", "color": "#f97316" },
+    { "id": "health", "name": "Health", "icon": "fa-heart-pulse", "color": "#ef4444" },
+    { "id": "education", "name": "Education", "icon": "fa-graduation-cap", "color": "#3b82f6" },
+    { "id": "housing", "name": "Housing", "icon": "fa-house", "color": "#06b6d4" },
+    { "id": "travel", "name": "Travel", "icon": "fa-plane", "color": "#10b981" },
+    { "id": "subscriptions", "name": "Subscriptions", "icon": "fa-tv", "color": "#6366f1" },
+    { "id": "other_expense", "name": "Other Expense", "icon": "fa-circle-minus", "color": "#9ca3af" }
+  ]
+}
