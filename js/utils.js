@@ -85,6 +85,13 @@ const utils = {
     };
   },
 
+  escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  },
+
   downloadFile(content, filename, type) {
     const blob = new Blob([content], { type });
     const url = URL.createObjectURL(blob);
